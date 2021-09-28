@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.h1font h1{
+    font-family: fantasy;
+    font-size: 60px !important;
+}
+.centeralih{
+    text-align: center;
+}
+.shiftdishhead h1{
+    font-family: cursive;
+}
+.imgsize{
+    width: 280px!important;
+    height: 260px!important;
+    margin: 0 auto;
+    
+}
+.imgsizefull{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    border: 3px solid white;
+    cursor: pointer;
+    box-shadow: 7px -5px 10px white;
+
+}
+.textcen {
+    text-align: center;
+    color: white;
+   
+}
+.h3color{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    text-shadow: 5px -3px 5px white
+
+}
+.thumnailcls{
+    padding: 30px 0;
+    height: 455px;
+    background-image: url("./bgimage.jpg");
+    background-size: cover;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+}
+.fullhov:hover .imgsizefull{
+    transform: scale(1.1);
+    box-shadow: 16px -8px 7px white;
+
+}
+.popup_window{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+.cendiv{
+    width: 400px;
+    height: 580px;
+    color: rgb(56, 56, 233);
+    border-radius: 50px;
+    border:2px solid black;
+    background-color: rgba(250,250,250,0.9);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding:  0px 50px;
+    transform: translate(-50%,-50%);
+}
+.closeimg{
+    width: 35px;
+    position: relative;
+    right: -280px;
+    top: 8px;
+    cursor: pointer;
+}
+.h2cenitem{
+    text-align: center;
+    color: black;
+}
+#noi{
+    width: 40px;
+}
+.minusimg{
+    width: 20px;
+}
+.plusimg{
+    width: 20px;
+}
+.totalamountdis{
+    position: absolute;
+    top: 0;
+}
+.tbclass{
+    width: 100px;
+    background-color: black;
+    height: 40px;
+    border-radius: 30px;
+    border: 3px solid white;
+    color: white;
+    box-shadow: 5px -2px 0px -1px black;
+}
+.tbclass:hover{
+    color:black;
+    background-color: transparent;
+    box-shadow: 7px -3px 2px 1px black;
+    border: 3px solid black;
+
+
+}
+.centerbutton{
+    text-align: center;
+}
+.searchcls{
+    width: 330px;
+    height: 45px;
+    border-radius: 50px;
+    border: 5px solid rgb(82, 77, 77);
+    padding: 15px 30px;
+    padding-left: 50px;
+}
+.searchfield{
+    position: relative;
+}
+.searchimg{
+    position: absolute;
+    width: 30px;
+    top: 5px;
+    left:600px;
+}
+.searchcls:focus{
+    outline: none;
+}
+.cenimg{
+    justify-content: center;
+    display: flex;
+}
+.pmimgsize{
+    width: 25px;
+}
+.minusimgcls{
+    position: absolute;
+    left: 146px;
+    bottom: 45px;
+    
+}
+.plusimgcls{
+    position: absolute;
+    bottom: 47px;
+    right: 155px;
+}
+.ptagcen{
+    color: white;
+    position: absolute;
+    bottom: 37px;
+    left: 233px;
+    font-size: 20px;
+}
+.tdivbottom{
+    width: 150px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.tdivbottom img{
+    width: 100%;
+    cursor: pointer;
+}
+.tdivb2 p{
+    position: relative;
+    animation-name: textmove;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    font-family: 'Rampart One', cursive;
+    font-size: 24px;
+     background-image: linear-gradient(to right,blue,red,green,rgb(219, 33, 236),orange,pink,rgb(32, 207, 219),violet,rgb(36, 98, 230));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+@keyframes textmove{
+    0%{bottom: 30px;transform: rotate(20deg);}
+    50%{bottom: 20px;transform: rotate(0deg);}
+    100%{bottom: 10px;transform: rotate(-20deg);}
+   }
+.tdivb3{
+    width: 0;
+    height: 0;
+    right: 10px ;
+    bottom: 10px;
+    position: fixed;
+}
+.divzoom{
+    width: 320px;
+    height: 350px;
+    border-radius: 20px;
+    border: 2px solid white;
+    transition-duration: 2s;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+.h3note{
+    position: absolute;
+    bottom: 1%;
+    text-align: center;
+    left: 1%;
+    font-family: 'Acme';
+    font-size: 17px;
+    color: yellow;
+    margin-top: -1px;
+    display: none;
+}
+.imgposdown{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.imgdown{
+    width: 27px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 3px solid red;
+}
+.zoomminus{
+    width: 0;
+    height: 0;
+    transition: 1ss;
+}
+.table1{
+    width: 90%;
+    margin: 0 auto;
+}
+.table1 td{
+padding: 5px;
+}
+.ordercss{
+    text-align: center;
+    background-color: linear-gradient(to right,blue,red,green,rgb(219, 33, 236),orange,pink,rgb(32, 207, 219),violet,rgb(36, 98, 230));
+}
+.navul{
+    float: right;
+    width: auto;
+    height: 68px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: yellow I !important;
+}
+.logosize{
+    width: 60px;
+    padding: 5px;
+    cursor: pointer;
+}
+.foodnamenav{
+    color: white;
+    font-family: 'Rampart One';
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+}
+.navbar {
+    border-radius: 0px !important;
+    min-height: 75px !important;
+    right: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.foodnamenav1{
+    text-decoration: none !important;
+    display: flex;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #fbff00;
+}
+.banner1{
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+}
+.ban1l{
+    position: relative;
+}
+.ban1l1{
+    position: absolute;
+    left: 47%;
+    top: 50%;
+    transform: translate(-53%,100%);}
+.ban1r{
+    position: relative;
+
+}
+.ban1l1 h3{
+    font-family: Akaya Kanadaka;
+    font-size: 30px;
+}
+.ban1l1 h2{
+    font-family:Rampart one;
+    color: black;
+    font-weight:800;
+    font-size: 30px;
+}
+.ban1r1{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(25%,50%);
+   
+}
+.banimgdiv{
+    position: relative;
+    animation-name: banimga;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.banimg{
+    border-radius: 20px;
+
+}
+@keyframes banimga{
+    0%{bottom: 15px;}
+    50%{top: 20px;}
+    100%{bottom: 15px;}
+
+}
+.bimgwidth{
+    width: 500px;
+    height: 280px;
+}
+.usertdiv{
+    width: 350px;
+    height: 380px;
+    border: 3px solid white;
+    text-align: center;
+    padding: 10px;
+    display: table;
+    color: white;
+    border-radius: 50px;
+    font-family:cursive;
+    font-size: 18px;
+}
+.uderdivimg{
+    width: 250px;
+    display: contents;
+}
+.userimgr{
+    border-radius: 100px;
+}
+.userdivriv{
+    width: auto;
+}
+.starcls{
+    width: 120px;
+}
+.reviewtdiv{
+    margin: 0 auto;
+    max-width: 1300px;
+    margin-top: 10px;
+    display: contents;
+}
+.reviewtclass{
+    background-color: black;
+    height: 620px;
+}
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+.marginreview{
+    margin-top: 8px;
+    justify-content: center;
+    display: flex;
+}
+.revhead{
+    text-align: center;
+    margin: 10px 0px;
+    color: #FEA901;
+    font-family: 'Rampart One';
+}
+.marquee1{
+    color: rgb(64, 64, 238);
+    font-size: 25px;
+    font-weight: 600;
+    font-family:Akaya Kanadaka;
+    margin: 5px 0px;
+}
+.ordernowimg{
+    width: 100%;
+    height: 600px;
+}
+.tdivb1{
+    width: 100%;
+    position: relative;
+}
+.contaidup{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+.orderform{
+    align-items: center;
+    display: flex;
+    background-color: #DCDCDC;
+    color: #252B5F;
+}
+label{
+    font-weight: 500;
+}
+.orderform form label{
+    font-family: Acme;
+    font-size: 30px;
+}
+.name1, .phno, .fcode {
+    padding: 5px;
+    width: 380px;
+    margin-left: 7px;
+    height: 40px;
+    float: right;
+    border-radius: 5px;
+    border: none;
+}
+.fcode{
+    cursor:not-allowed;
+    background-color: white;
+}
+.address{
+    width: 380px;
+    height: 70px;
+    float: right;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.name1::before{
+  background: url('./Colon.png');
+  width: 50px;
+}
+form button{
+    width: 140px;
+    height: 50px;
+    border-radius: 50px
+    
+}
+.orderdiv1{
+    background-color: #DCDCDC;
+}
+.bx-wrapper{
+    max-width: 100% !important;
+}
+.placeorder{
+    width: 36%;
+    height: 50px;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    box-shadow: 3px 3px white;
+}
+.placeorder:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 6px 4px black;
+}
+.ordercom{
+    color: black;
+    border: 3px solid black;
+    background: white;
+    padding: 2px;
+
+}
+.ordercom:hover{
+    box-shadow: 6px 4px black;
+    transform: scale(1.1);
+    font-weight: 700;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.footdiv{
+    display: flex;
+    position: relative;
+    height: 12vh;
+    background-color: black;
+    color: white;
+    padding-right: 0;
+    padding-left: 0;
+}
+.footimg{
+    position: absolute;
+    right:10%;
+    margin-top: 10px;
+}
+.wpsimg{
+    width: 40px;
+    cursor: pointer;
+    margin: 5px 10px;
+    color: white;
+}
+.footdivl{
+    width: 50%;
+    float: left;
+}
+.footdivr{
+    width: 50%;
+    float: right;
+}
+.footdivl a{
+    text-decoration: none !important;
+    color: white;
+}
+.icons{  
+    position: absolute;
+    bottom: 14px;
+    left: 26px;
+}
+.stepsimg{
+    width: 100%;
+    height: 145px;
+    margin-bottom: -50px;
+    cursor: pointer;
+}
+.stepfont{
+    text-align: center !important;
+    font-size: 30px !important;
+    font-family: 'Akaya Kanadaka' !important;
+    color: black !important;
+    font-weight: bold !important;
+    text-decoration-line:underline;
+}
+.imgbike{
+    width: 100px;
+}
+.gifimg1{
+    position: absolute;
+    right: 2%;
+    bottom: 15px;
+    animation-name: gifimg;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes gifimg{
+    0%{ right: 2%; bottom: 15px;}
+    40%{ right: 40%; bottom: 15px;}
+    70%{ right: 70%; bottom: 15px;}
+    100%{ right: 100%; bottom: 15px;}
+
+}
+.gifimg2{
+    position:absolute;
+    bottom: 20px;
+    left: -96%;
+}
+.gifimage2{
+    width: 200px;
+}
+.headdel{
+    z-index: 99;
+    position: relative;
+    left: 90%;
+    font-family: 'Akaya Kanadaka';
+    font-size: 35px;
+    font-weight: 900;
+    color: #4532f8;
+    text-decoration: underline;
+}
+.bxslider h2{
+    background-image: linear-gradient(to right,red,blue,green,yellow,pink,black,rgb(231, 24, 238),blue);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.printrecp{
+    width: 27%;
+    height: 70%;
+    background-color:white;
+    position:fixed;
+    border:2px dotted black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    border-radius: 50px;
+    
+}
+.congimg{
+    width: 100px;
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.h3bottom{
+    position: absolute;
+    bottom: 25%;
+    left: 7%;
+    font-size: 26px;
+    font-style: italic;
+    font-family: 'Akaya Kanadaka';
+    font-weight: 800;
+    color: blue;
+}
+.closepopup{
+    width: 35px;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 87%;
+    top: 5%;
+    cursor: pointer;
+}
+@media screen and (max-width:767px) {
+    .banner1{
+        /* width: 100% !important; */
+    }
+    .searchimg {
+        position: absolute;
+        width: 21px;
+        top: 11px;
+        left: 10px;
+    }
+.plusimgcls {
+    position: absolute;
+    bottom: 47px;
+    right: 166px;
+}
+.minusimgcls {
+    position: absolute;
+    left: 168px;
+    bottom: 47px;
+}
+.ptagcen {
+    left: 149px;
+}
+.reviewtclass {
+    height: auto;
+}
+.divzoom {
+    width: 215px;
+}
+.wpsimg {
+    width: 27px;
+    cursor: pointer;
+    margin: 11px 4px;
+    color: white;
+}
+.noneclass{
+    display: none;
+}
+.blockcls{
+    display: block;
+}
+form input{
+    float: none !important;
+    border: none !important;
+    width: 100% !important;
+}
+.headdel{
+    text-align: center;
+    left: 0;
+}
+.stepsimg{
+    margin-bottom: 25px;
+    height: 90px;
+}
+.tdivb2 p{
+    display: none;
+}
+
+.tdivbottom img {
+    width: 80%;
+    float: right;
+}
+.logosize{
+    display: none;
+}
+.foodnamenav{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-right: 75px;
+}
+.banimgdiv img{
+    position: relative;
+    top: -45px;
+    left: 40px;
+    height: 150px;
+    
+}
+.ban1l1{
+    transform: none;
+   position: initial;
+} 
+.imgbike {
+    width: 90px;
+}
+.usertdiv {
+    margin-bottom: 15px;
+}
+.shiftdishhead h1{
+    font-family: 'Akaya Kanadaka';
+    font-weight: 900;
+}
+.searchcls {
+   padding-left: 35px;
+}
+.printrecp{
+    width: -webkit-fill-available;
+}
+
+}
+
